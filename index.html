@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suharshini Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-400 selection:text-slate-900">
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 glass">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <a href="#hero" class="text-xl font-bold tracking-wide text-cyan-400">SL</a>
+      <div class="hidden gap-6 text-sm font-medium md:flex">
+        <a href="#about" class="transition hover:text-cyan-400">About</a>
+        <a href="#projects" class="transition hover:text-cyan-400">Projects</a>
+        <a href="#skills" class="transition hover:text-cyan-400">Skills</a>
+        <a href="#contact" class="transition hover:text-cyan-400">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="mx-auto grid min-h-[92vh] max-w-6xl items-center gap-10 px-6 py-16 md:grid-cols-2">
+      <div>
+        <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">Portfolio Website</p>
+        <h1 class="text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
+          Hey, I'm <span class="text-cyan-400">Suharshini</span>
+        </h1>
+        <p class="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
+          A student developer focused on building clean, practical, and responsive web experiences with modern UI.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#projects" class="rounded-2xl bg-cyan-400 px-6 py-3 font-semibold text-slate-900 transition hover:scale-105">View Projects</a>
+          <a href="#contact" class="rounded-2xl border border-white/15 px-6 py-3 font-semibold transition hover:border-cyan-400 hover:text-cyan-400">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl">
+        <div class="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 p-8">
+          <div class="mb-4 h-3 w-24 rounded-full bg-cyan-400/60"></div>
+          <div class="mb-3 h-3 w-40 rounded-full bg-white/20"></div>
+          <div class="mb-3 h-3 w-32 rounded-full bg-white/20"></div>
+          <div class="mt-8 grid grid-cols-2 gap-4">
+            <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4">
+              <p class="text-sm text-slate-400">Focus</p>
+              <p class="mt-2 font-semibold">Frontend</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4">
+              <p class="text-sm text-slate-400">Learning</p>
+              <p class="mt-2 font-semibold">Web Development and Backend</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="mx-auto max-w-6xl px-6 py-16">
+      <div class="mb-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">About</p>
+        <h2 class="mt-2 text-3xl font-bold">Who I Am</h2>
+      </div>
+      <div class="grid gap-8 md:grid-cols-2">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <p class="leading-8 text-slate-300">
+            I'm a passionate student developer who enjoys solving practical problems through code. I like building interfaces that are simple, responsive, and easy to use, while also exploring embedded systems and project-based development.
+          </p>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <p class="leading-8 text-slate-300">
+            My current interests include portfolio design, smart systems, frontend development, and clean user experiences. I focus on writing code that is readable, organized, and realistic for real-world projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mx-auto max-w-6xl px-6 py-16">
+      <div class="mb-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">Projects</p>
+        <h2 class="mt-2 text-3xl font-bold">Things I've Built</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2">
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-cyan-400/40">
+          <h3 class="text-xl font-bold">AI-Based Helpdesk Ticket Classifier</h3>
+          <p class="mt-3 text-slate-300"> A smart support system that automatically classifies customer tickets based on priority, category, and issue type. 
+          It helps route tickets to the correct department faster, reducing manual work and improving response efficiency.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-cyan-400/10 px-3 py-1 text-sm text-cyan-300">CSS</span>
+            <span class="rounded-full bg-cyan-400/10 px-3 py-1 text-sm text-cyan-300">AI Workflow</span>
+            <span class="rounded-full bg-cyan-400/10 px-3 py-1 text-sm text-cyan-300">HTML</span>
+          </div>
+        </article>
+
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-cyan-400/40">
+          <h3 class="text-xl font-bold">AI Ticket Routing Assistant</h3>
+          <p class="mt-3 text-slate-300">A concept project for classifying and routing user tickets intelligently to reduce response time and improve support workflow efficiency.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-cyan-400/10 px-3 py-1 text-sm text-cyan-300">AI Logic</span>
+            <span class="rounded-full bg-cyan-400/10 px-3 py-1 text-sm text-cyan-300">Workflow</span>
+            <span class="rounded-full bg-cyan-400/10 px-3 py-1 text-sm text-cyan-300">UI Planning</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="mx-auto max-w-6xl px-6 py-16">
+      <div class="mb-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">Skills</p>
+        <h2 class="mt-2 text-3xl font-bold">My Toolkit</h2>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">HTML</div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">Tailwind CSS</div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">JavaScript Basics</div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">C / C++</div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">Git & GitHub</div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">AI WorkFlow</div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">Problem Solving</div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">UI Thinking</div>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-6xl px-6 py-16">
+      <div class="mb-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">Contact</p>
+        <h2 class="mt-2 text-3xl font-bold">Let's Connect</h2>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-2">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <div class="space-y-4 text-slate-300">
+            <p><span class="font-semibold text-white">Email:</span> suharshini.tamidala@gmail.com</p>
+            <p><span class="font-semibold text-white">Phone:</span> +91 95023 28784</p>
+            <p><span class="font-semibold text-white">Location:</span> India</p>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <form class="space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 outline-none transition focus:border-cyan-400" />
+            <input type="email" placeholder="Your Email" class="w-full rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 outline-none transition focus:border-cyan-400" />
+            <textarea rows="4" placeholder="Your Message" class="w-full rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 outline-none transition focus:border-cyan-400"></textarea>
+            <button type="button" class="rounded-2xl bg-cyan-400 px-6 py-3 font-semibold text-slate-900 transition hover:scale-105">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-6 pb-20">
+      <div class="mb-6">
+        <p class="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">Message Box</p>
+      </div>
+
+      <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl">
+        <div class="flex flex-wrap items-center gap-2 border-b border-white/10 p-4">
+          <button type="button" class="rounded-xl border border-white/10 px-3 py-2 text-sm font-semibold transition hover:border-cyan-400 hover:text-cyan-400">B</button>
+          <button type="button" class="rounded-xl border border-white/10 px-3 py-2 text-sm italic transition hover:border-cyan-400 hover:text-cyan-400">I</button>
+          <button type="button" class="rounded-xl border border-white/10 px-3 py-2 text-sm font-mono transition hover:border-cyan-400 hover:text-cyan-400">&lt;/&gt;</button>
+          <button type="button" class="rounded-xl border border-white/10 px-3 py-2 text-sm transition hover:border-cyan-400 hover:text-cyan-400">Link</button>
+          <button type="button" class="rounded-xl border border-white/10 px-3 py-2 text-sm transition hover:border-cyan-400 hover:text-cyan-400">File</button>
+          <button type="button" class="rounded-xl border border-white/10 px-3 py-2 text-sm transition hover:border-cyan-400 hover:text-cyan-400">Image</button>
+          <button type="button" class="ml-auto rounded-xl bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:scale-105">Preview</button>
+        </div>
+
+        <div class="p-4">
+          <div contenteditable="true" class="min-h-[180px] rounded-2xl border border-white/10 bg-slate-900/70 p-4 text-slate-200 outline-none" data-placeholder="Write your message here..."></div>
+          <p class="mt-3 text-sm text-slate-400">UI only — formatting buttons are visual for this task.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-slate-950">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-slate-400 md:flex-row">
+      <p>© 2026 Suharshini. Built with HTML + Tailwind CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>
